@@ -4,20 +4,12 @@ public class Point {
     private double x;
     private double y;
 
-    public double getX() {
-        return x;
+    double getyDistance(Point from) {
+        return this.y - from.y;
     }
 
-    public void setX(double x) {
-        this.x = x;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    public void setY(double y) {
-        this.y = y;
+    double getxDistance(Point from) {
+        return this.x - from.x;
     }
 
     public Point(double x, double y) {
